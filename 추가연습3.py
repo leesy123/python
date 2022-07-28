@@ -13,5 +13,8 @@ def solution(left, right):
 
   return ans
 
-c = solution(13,17)
+left = int(input('left = '))
+right = int(input('right = '))
+
+c = solution(left,right)
 print(c)
