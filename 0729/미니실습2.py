@@ -1,6 +1,3 @@
-from tkinter import X
-
-
 print('리스트를 역순으로 출력합니다.')
 len = int(input('원소 수를 입력하세요. '))
 x = []
