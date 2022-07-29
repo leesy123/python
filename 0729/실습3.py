@@ -9,6 +9,18 @@ def findIndex(b, key):
             else : return i
         i+=1
 
+def binarySearch(a, key):
+    pl = 0
+    pr = len(a) - 1
+    pc = len(a)//2
+    while True :
+        pc = (pr+pl)//2
+        if key == a[pc] : return pc
+        elif key < a[pc] : pr = pc-1
+        else : pl = pc+1
+        if pl>=pr : return -1
+
 num = list(map(int, input().split()))
 key = int(input())
 print(findIndex(num,key))
+print(binarySearch(num,key))
