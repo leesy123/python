@@ -12,7 +12,6 @@ def findIndex(b, key):
 def binarySearch(a, key):
     pl = 0
     pr = len(a) - 1
-    pc = len(a)//2
     while True :
         pc = (pr+pl)//2
         if key == a[pc] : return pc
